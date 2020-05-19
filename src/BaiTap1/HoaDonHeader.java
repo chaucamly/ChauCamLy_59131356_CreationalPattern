@@ -65,8 +65,5 @@ public class HoaDonHeader
                 + "Ngày Bán : " + NgayBan +"\n"
                 + "Tên Khách Hàng:" + TenKhachHang  ;
     }
-    
-   
-    
 }
 

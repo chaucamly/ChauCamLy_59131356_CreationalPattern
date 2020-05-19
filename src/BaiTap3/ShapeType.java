@@ -11,5 +11,5 @@ package BaiTap3;
  */
 public enum ShapeType 
 {
-    
+    Circle, Rectangle, Triangle;
 }

@@ -9,6 +9,31 @@ package BaiTap3;
  *
  * @author Cam Ly
  */
-public class Triangle {
+public class Triangle extends Shape 
+{
+    private static Triangle triangle;
+
+    @Override
+    public String draw() 
+    {
+        return "triangLe";
+    }
     
-}
+    protected Triangle()
+    {}
+    
+    protected Triangle( String brush, String paper, String frame)
+    {
+        super(brush, paper, frame);
+        
+    }
+     
+    public static Triangle createInstance()
+    {
+        {
+            if(triangle == null)
+            triangle = new Triangle();
+    }
+        return triangle;
+    }
+ }

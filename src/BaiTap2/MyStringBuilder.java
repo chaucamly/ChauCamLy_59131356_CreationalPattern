@@ -9,6 +9,7 @@ package BaiTap2;
  *
  * @author Cam Ly
  */
-public class MyStringBuilder {
+public class MyStringBuilder 
+{
     
 }

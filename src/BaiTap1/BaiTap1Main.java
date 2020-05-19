@@ -29,12 +29,14 @@ public class BaiTap1Main
         CTHD CTHD2 = new CTHD("Bánh Cosy",2,50000,0.5);
         CTHD CTHD3 = new CTHD("Kẹo Chocolate",2,90000,0.7);
         CTHD CTHD4 = new CTHD("Kẹo Singum",2,10000,0.5);
+        CTHD CTHD5 = new CTHD ("Bánh Snacks",10,7000,0.1);
         HoaDon  HD = new HoaDon.Builder()
             .addHoaDonHeader(HDH)
             .addCTHD(CTHD1)
             .addCTHD(CTHD2)
             .addCTHD(CTHD3)
             .addCTHD(CTHD4)
+            .addCTHD(CTHD5)
             .build();
                 
         System.out.println(HD.toString());

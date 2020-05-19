@@ -9,6 +9,19 @@ package BaiTap3;
  *
  * @author Cam Ly
  */
-public class ShapeFactory {
-    
+public class ShapeFactory 
+{
+
+    Shape circle1;
+    public Shape createShape(ShapeType Type)
+    {
+        Shape shape;
+        switch(Type)
+        {
+            case Rectangle: return shape = Rectangle.createInstance();
+            case Circle : return shape = Circle.createInstance();
+            case Triangle: return shape = Triangle.createInstance();
+        }
+        return null;
+    }
 }

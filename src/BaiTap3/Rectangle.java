@@ -9,6 +9,32 @@ package BaiTap3;
  *
  * @author Cam Ly
  */
-public class Rectangle {
+public class Rectangle extends Shape
+{
+    private static Rectangle rectangle;
+
+    @Override
+    public String draw() 
+    {
+        return "rectangLe";
+    }
+    public Rectangle()
+    {}
     
+    public Rectangle(String brush, String paper, String frame)
+    {
+        super( brush, paper, frame);
+        
+    }
+    
+    public static Rectangle createInstance()
+    {
+        if(rectangle == null)
+        {
+            rectangle = new Rectangle();
+        }
+        
+            return rectangle;
+        
+    }
 }
